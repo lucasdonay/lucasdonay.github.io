@@ -1,0 +1,113 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: #00cbeb;
+  border-bottom: 10px solid #292929;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav {
+  text-align: right;
+}
+
+a {
+  display: inline-flex;
+  align-items: center;
+  font-family: "Fira Code", Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  margin-right: 30px;
+  text-decoration: none;
+}
+
+@-webkit-keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes swing {
+  15% {
+    -webkit-transform: translateX(5px);
+    transform: translateX(5px);
+  }
+  30% {
+    -webkit-transform: translateX(-5px);
+    transform: translateX(-5px);
+  }
+  50% {
+    -webkit-transform: translateX(3px);
+    transform: translateX(3px);
+  }
+  65% {
+    -webkit-transform: translateX(-3px);
+    transform: translateX(-3px);
+  }
+  80% {
+    -webkit-transform: translateX(2px);
+    transform: translateX(2px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+
+#button {
+  display: inline-block;
+  background-color: rgb(255, 255, 255);
+  color: #00cbeb;
+  padding: 18px 20px;
+  box-shadow: 7px 7px 0px #4b4b4b;
+  margin-right: 0;
+}
+
+#button:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
+
+a::before {
+  content: "";
+  background-color: #292929;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+}
+
+a:hover {
+  -webkit-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  transform: scale(1.1);
+  -webkit-animation: swing 1s ease;
+  animation: swing 1s ease;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+}
