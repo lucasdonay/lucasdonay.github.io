@@ -1667,8 +1667,7 @@
     padding: 50px;
   }
   .block-half-content-img {
-    background-size: cover;
-    background: no-repeat;
+    background-repeat: no-repeat;
     width: 20%;
     @include media-breakpoint-down(md) {
       width: 50%;
